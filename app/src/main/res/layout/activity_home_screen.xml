@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#51a7c4"
+    tools:context="socialsoft4u.jai.designlogin.HomeScreen">
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/icon"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_action_account"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:id="@+id/badge"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginTop="-8dp"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_alignTop="@+id/icon"
+        android:layout_width="28dp"
+        app:badgeBackground="@drawable/badge_bg_shadow"
+        app:maxTextLength="2"
+        android:layout_height="28dp"></com.nex3z.notificationbadge.NotificationBadge>
+
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/badge"
+        android:text="increase"
+        android:id="@+id/increase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/increase"
+        android:text="clear"
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
